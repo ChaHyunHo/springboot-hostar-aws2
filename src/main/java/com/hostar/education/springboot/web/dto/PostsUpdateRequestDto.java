@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class PostsUpdateRequestDto {
-
     private String title;
     private String content;
 
@@ -16,5 +15,4 @@ public class PostsUpdateRequestDto {
         this.title = title;
         this.content = content;
     }
-
 }

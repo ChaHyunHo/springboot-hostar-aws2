@@ -13,12 +13,8 @@ import java.util.List;
 public class WebConfig implements WebMvcConfigurer {
     private final LoginUserArgumentResolver loginUserArgumentResolver;
 
-    /**
-     * LoginUserArgumentResolver 스프링에서 인식될 수 있도록 config에 추가
-     * @param resolvers
-     */
     @Override
-    public void addArgumentResolvers(List<HandlerMethodArgumentResolver> resolvers) {
-        resolvers.add(loginUserArgumentResolver);
+    public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
+        argumentResolvers.add(loginUserArgumentResolver);
     }
 }
