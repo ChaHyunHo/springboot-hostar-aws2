@@ -16,7 +16,7 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r springboot-hostar-aws2 * # springboot-hostar-aws2 이름으로 압축
+  - zip -r springboot-hostar-aws2 # springboot-hostar-aws2 이름으로 압축
   - mkdir -p deploy # deploy 디렉토리 설정
   - mv springboot-hosatr-aws2.zip deploy/springboot-hostar-aws2.zip # springboot-hosatr-aws2.zip를 해당 디렉토리로 이동
 
